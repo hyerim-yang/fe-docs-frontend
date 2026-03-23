@@ -1,0 +1,776 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "text",
+      "id": "Fq0Sj",
+      "x": 0,
+      "y": 0,
+      "fill": "#000000",
+      "content": "307360",
+      "fontFamily": "Inter",
+      "fontSize": 12,
+      "fontWeight": "normal"
+    },
+    {
+      "type": "frame",
+      "id": "YaCO7",
+      "x": -188,
+      "y": -120,
+      "name": "Home Page",
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": [
+        80,
+        0
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "WofhD",
+          "name": "Frame 1",
+          "clip": true,
+          "width": 198,
+          "height": 157,
+          "fill": "#FFFFFF",
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "PcAlm",
+          "name": "Component/TitleArea",
+          "layout": "vertical",
+          "gap": 8,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "MYuvv",
+              "name": "logo",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TdUmJ",
+                  "name": "logoMark",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#E42313",
+                  "cornerRadius": 6
+                },
+                {
+                  "type": "text",
+                  "id": "3egso",
+                  "name": "logoText",
+                  "fill": "#0D0D0D",
+                  "content": "<FrontEnd />",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "4k9Np",
+              "name": "subtitle",
+              "fill": "#7A7A7A",
+              "content": "프론트엔드팀 문서 저장소",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cx2yl",
+          "name": "Doc List",
+          "width": 720,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "W4mti",
+              "name": "Component/DocListItem",
+              "width": "fill_container",
+              "fill": "#FAFAFA",
+              "cornerRadius": 10,
+              "gap": 12,
+              "padding": [
+                16,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Ocidd",
+                  "name": "r1Left",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "KNxxd",
+                      "name": "r1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "file-text",
+                      "iconFontFamily": "lucide",
+                      "fill": "#7A7A7A"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "4nMNF",
+                      "name": "r1Info",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "2OOA8",
+                          "name": "r1Title",
+                          "fill": "#0D0D0D",
+                          "content": "신규입사자 온보딩 가이드",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HIL2S",
+                          "name": "r1Meta",
+                          "fill": "#B0B0B0",
+                          "content": "온보딩 · 김민수 · 2026.03.18",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "Hftci",
+                  "name": "r1Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B0B0B0"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "0hO3n",
+              "name": "item2",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "gap": 12,
+              "padding": [
+                16,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HyhNN",
+                  "name": "r1Left",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "9luHJ",
+                      "name": "r1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "file-text",
+                      "iconFontFamily": "lucide",
+                      "fill": "#7A7A7A"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v5se0",
+                      "name": "r1Info",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FICho",
+                          "name": "r1Title",
+                          "fill": "#0D0D0D",
+                          "content": "프로젝트 폴더 구조 컨벤션",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lwtTL",
+                          "name": "r1Meta",
+                          "fill": "#B0B0B0",
+                          "content": "컨벤션 · 이지현 · 2026.03.15",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "J1o49",
+                  "name": "r1Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B0B0B0"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "009vg",
+              "name": "item3",
+              "width": "fill_container",
+              "fill": "#FAFAFA",
+              "cornerRadius": 10,
+              "gap": 12,
+              "padding": [
+                16,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Z2n84",
+                  "name": "r1Left",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "7DLyT",
+                      "name": "r1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "file-text",
+                      "iconFontFamily": "lucide",
+                      "fill": "#7A7A7A"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gMxDI",
+                      "name": "r1Info",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YIKKM",
+                          "name": "r1Title",
+                          "fill": "#0D0D0D",
+                          "content": "React 19 서버 컴포넌트 도입 가이드",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sqtMR",
+                          "name": "r1Meta",
+                          "fill": "#B0B0B0",
+                          "content": "React · 박준호 · 2026.03.12",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "xYFlD",
+                  "name": "r1Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B0B0B0"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zDSYQ",
+              "name": "item4",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "gap": 12,
+              "padding": [
+                16,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "v41NL",
+                  "name": "r1Left",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "If9J9",
+                      "name": "r1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "file-text",
+                      "iconFontFamily": "lucide",
+                      "fill": "#7A7A7A"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gKaxl",
+                      "name": "r1Info",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yQ5L9",
+                          "name": "r1Title",
+                          "fill": "#0D0D0D",
+                          "content": "TypeScript 타입 시스템 심화 패턴",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "eSEcm",
+                          "name": "r1Meta",
+                          "fill": "#B0B0B0",
+                          "content": "TypeScript · 이지현 · 2026.03.10",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "Ctxbm",
+                  "name": "r1Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B0B0B0"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qwtZ2",
+              "name": "item5",
+              "width": "fill_container",
+              "fill": "#FAFAFA",
+              "cornerRadius": 10,
+              "gap": 12,
+              "padding": [
+                16,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vAjbk",
+                  "name": "r1Left",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "c3uoI",
+                      "name": "r1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "file-text",
+                      "iconFontFamily": "lucide",
+                      "fill": "#7A7A7A"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "K95re",
+                      "name": "r1Info",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZGO6w",
+                          "name": "r1Title",
+                          "fill": "#0D0D0D",
+                          "content": "Next.js 15 App Router 마이그레이션",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Rk3ZU",
+                          "name": "r1Meta",
+                          "fill": "#B0B0B0",
+                          "content": "Next.js · 박준호 · 2026.03.08",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "tpLRt",
+                  "name": "r1Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B0B0B0"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vISUz",
+              "name": "item6",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "gap": 12,
+              "padding": [
+                16,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "nqzvZ",
+                  "name": "r1Left",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "dSrIA",
+                      "name": "r1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "file-text",
+                      "iconFontFamily": "lucide",
+                      "fill": "#7A7A7A"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FbRYL",
+                      "name": "r1Info",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "L6QIc",
+                          "name": "r1Title",
+                          "fill": "#0D0D0D",
+                          "content": "Tailwind CSS v4 마이그레이션 노트",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "C7B0j",
+                          "name": "r1Meta",
+                          "fill": "#B0B0B0",
+                          "content": "CSS · 김민수 · 2026.03.05",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "CgjxW",
+                  "name": "r1Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B0B0B0"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "T31so",
+              "name": "item7",
+              "width": "fill_container",
+              "fill": "#FAFAFA",
+              "cornerRadius": 10,
+              "gap": 12,
+              "padding": [
+                16,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gokHP",
+                  "name": "r1Left",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "7bRAX",
+                      "name": "r1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "file-text",
+                      "iconFontFamily": "lucide",
+                      "fill": "#7A7A7A"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JJHwj",
+                      "name": "r1Info",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KYmHF",
+                          "name": "r1Title",
+                          "fill": "#0D0D0D",
+                          "content": "Git 브랜치 전략 및 PR 규칙",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "09reB",
+                          "name": "r1Meta",
+                          "fill": "#B0B0B0",
+                          "content": "컨벤션 · 박준호 · 2026.03.01",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "EB1MY",
+                  "name": "r1Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B0B0B0"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "4Hfz0",
+              "name": "item8",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "gap": 12,
+              "padding": [
+                16,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "scQXr",
+                  "name": "r1Left",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "GJevo",
+                      "name": "r1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "file-text",
+                      "iconFontFamily": "lucide",
+                      "fill": "#7A7A7A"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HOUfj",
+                      "name": "r1Info",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1PvDM",
+                          "name": "r1Title",
+                          "fill": "#0D0D0D",
+                          "content": "Storybook 컴포넌트 문서화 가이드",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "SiWD8",
+                          "name": "r1Meta",
+                          "fill": "#B0B0B0",
+                          "content": "도구 · 이지현 · 2026.02.25",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "E2bPa",
+                  "name": "r1Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B0B0B0"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uHYkG",
+              "name": "item9",
+              "width": "fill_container",
+              "fill": "#FAFAFA",
+              "cornerRadius": 10,
+              "gap": 12,
+              "padding": [
+                16,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yqh8B",
+                  "name": "r1Left",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "DNoIV",
+                      "name": "r1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "file-text",
+                      "iconFontFamily": "lucide",
+                      "fill": "#7A7A7A"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "akoWG",
+                      "name": "r1Info",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YIJ4K",
+                          "name": "r1Title",
+                          "fill": "#0D0D0D",
+                          "content": "E2E 테스트 작성 가이드 (Playwright)",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nHSv8",
+                          "name": "r1Meta",
+                          "fill": "#B0B0B0",
+                          "content": "테스트 · 김민수 · 2026.02.20",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "0bR3h",
+                  "name": "r1Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B0B0B0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
