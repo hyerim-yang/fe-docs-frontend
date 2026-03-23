@@ -22,12 +22,12 @@ const meta = {
 
 export default function TemplatePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center px-4 pt-16 pb-20">
+    <main className="flex min-h-screen flex-col items-center bg-background px-4 pt-16 pb-20">
       <article className="w-full max-w-[720px]">
         {/* 뒤로가기 */}
         <Link
           href="/"
-          className="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-gray-600 transition-colors mb-8"
+          className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
         >
           <svg
             className="h-4 w-4"
@@ -42,14 +42,14 @@ export default function TemplatePage() {
         </Link>
 
         {/* 제목 & 메타 정보 */}
-        <h1 className="text-3xl font-semibold text-gray-900 mb-3">{meta.title}</h1>
-        <div className="flex items-center gap-3 text-sm text-gray-400 mb-8">
+        <h1 className="text-3xl font-semibold text-foreground mb-3">{meta.title}</h1>
+        <div className="flex items-center gap-3 text-sm text-muted-foreground mb-8">
           <span>작성자 : {meta.author}</span>
-          <span className="text-gray-200">|</span>
+          <span className="text-border">|</span>
           <span>작성일 : {meta.createdAt}</span>
           {meta.updatedAt !== meta.createdAt && (
             <>
-              <span className="text-gray-200">|</span>
+              <span className="text-border">|</span>
               <span>수정일 : {meta.updatedAt}</span>
             </>
           )}
@@ -58,10 +58,10 @@ export default function TemplatePage() {
         {/* ──────────────────────────────────────────── */}
         {/* ✏️ 본문 내용을 아래에 작성하세요               */}
         {/* ──────────────────────────────────────────── */}
-        <div className="space-y-14 text-[15px] leading-relaxed text-gray-700">
+        <div className="space-y-14 text-[15px] leading-relaxed text-foreground">
           {/* 섹션 예시 */}
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">섹션 제목</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-4">섹션 제목</h2>
             <p>내용을 작성하세요.</p>
           </section>
         </div>
