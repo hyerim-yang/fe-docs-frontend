@@ -2,7 +2,20 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronRight, BookOpen, FileText, Folder, Rocket, Shield, Wrench } from "lucide-react";
+import {
+  ChevronRight,
+  BookOpen,
+  Code,
+  FileText,
+  Folder,
+  GraduationCap,
+  Layers,
+  Palette,
+  Rocket,
+  Shield,
+  Sparkles,
+  Wrench,
+} from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -155,5 +168,10 @@ export const CATEGORY_ICON_MAP: Record<string, React.ElementType> = {
   가이드: BookOpen,
   정책: Shield,
   기술: Wrench,
+  FrontEnd: Code,
+  팝테일: Layers,
+  "팝테일 에디터": Palette,
+  팝키즈: Sparkles,
+  Study: GraduationCap,
   기타: FileText,
 };
