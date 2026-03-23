@@ -69,7 +69,7 @@ export const docs: Doc[] = [
     author: "작성자 이름",
     date: "2026-03-23",
     category: "팝테일",
-    tag: "기술",
+    tag: "서비스",
     href: "/docs/poptail",
   },
   {
@@ -78,7 +78,7 @@ export const docs: Doc[] = [
     author: "작성자 이름",
     date: "2026-03-23",
     category: "팝테일 에디터",
-    tag: "기술",
+    tag: "서비스",
     href: "/docs/poptail-editor",
   },
   {
@@ -87,7 +87,7 @@ export const docs: Doc[] = [
     author: "작성자 이름",
     date: "2026-03-23",
     category: "팝키즈",
-    tag: "기술",
+    tag: "서비스",
     href: "/docs/popkids",
   },
   {
@@ -96,7 +96,7 @@ export const docs: Doc[] = [
     author: "작성자 이름",
     date: "2026-03-23",
     category: "Study",
-    tag: "기술",
+    tag: "스터디",
     href: "/docs/fastapi",
   },
   {
@@ -105,7 +105,7 @@ export const docs: Doc[] = [
     author: "작성자 이름",
     date: "2026-03-23",
     category: "Study",
-    tag: "기술",
+    tag: "스터디",
     href: "/docs/dbeaver",
   },
 ];
@@ -117,4 +117,8 @@ export const tagVariant: Record<string, string> = {
     "bg-green-100 text-green-700 border-green-200 dark:bg-green-950 dark:text-green-300 dark:border-green-800",
   정책: "bg-purple-100 text-purple-700 border-purple-200 dark:bg-purple-950 dark:text-purple-300 dark:border-purple-800",
   기술: "bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-950 dark:text-orange-300 dark:border-orange-800",
+  서비스:
+    "bg-pink-100 text-pink-700 border-pink-200 dark:bg-pink-950 dark:text-pink-300 dark:border-pink-800",
+  스터디:
+    "bg-teal-100 text-teal-700 border-teal-200 dark:bg-teal-950 dark:text-teal-300 dark:border-teal-800",
 };
