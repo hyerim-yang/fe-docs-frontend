@@ -3,6 +3,7 @@ import "./globals.css";
 import { Geist, JetBrains_Mono, Raleway } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import { SidebarLayout } from "@/components/sidebar-layout";
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
@@ -31,7 +32,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <SidebarLayout>{children}</SidebarLayout>
         </ThemeProvider>
       </body>
     </html>

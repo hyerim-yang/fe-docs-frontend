@@ -3,8 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function OnboardingPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-background px-4 pt-16 pb-20">
-      <article className="w-full max-w-[720px]">
+    <main className="flex-1 px-6 pt-8 pb-20">
+      <article className="mx-auto w-full max-w-[720px]">
         <Link
           href="/"
           className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
