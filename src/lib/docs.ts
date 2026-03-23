@@ -27,6 +27,15 @@ export const docs: Doc[] = [
     tag: "가이드",
     href: "/docs/fe-team-guide",
   },
+  {
+    title: "프론트엔드팀 업무 플로우",
+    description: "지라 할당부터 배포까지, 프론트엔드 팀의 업무 진행 단계를 안내합니다.",
+    author: "양혜림",
+    date: "2026-03-23",
+    category: "온보딩",
+    tag: "가이드",
+    href: "/docs/fe-workflow",
+  },
 ];
 
 export const tagVariant: Record<string, string> = {
