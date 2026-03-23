@@ -141,10 +141,6 @@ export default function OnboardingPage() {
                     신규 고정 IP 필요 시 →{" "}
                     <span className="text-foreground font-medium">서현석 과장님</span> 문의
                   </li>
-                  <li>
-                    그 외 네트워크 관련 →{" "}
-                    <span className="text-foreground font-medium">이민구 과장님</span> 문의
-                  </li>
                 </ul>
               </div>
             </div>
@@ -172,7 +168,17 @@ export default function OnboardingPage() {
                 <tr className="border-t border-border">
                   <td className="px-4 py-2.5">1F</td>
                   <td className="px-4 py-2.5">Kyocera Taskalfa VFM251ci</td>
-                  <td className="px-4 py-2.5 font-mono text-xs">-</td>
+                  <td className="px-4 py-2.5 font-mono text-xs">192.168.1.215</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="px-4 py-2.5">2F</td>
+                  <td className="px-4 py-2.5">Kyocera Taskalfa MZ3200i</td>
+                  <td className="px-4 py-2.5 font-mono text-xs">192.168.1.209</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="px-4 py-2.5">4F</td>
+                  <td className="px-4 py-2.5">Kyocera Taskalfa 2552ci</td>
+                  <td className="px-4 py-2.5 font-mono text-xs">192.168.10.4</td>
                 </tr>
               </tbody>
             </table>
@@ -254,29 +260,6 @@ export default function OnboardingPage() {
               앱 개발자 <span className="font-medium text-foreground">상현님</span>께 요청 드리기{" "}
               <span className="text-foreground/50 text-sm">(dev, stg, prod)</span>
             </p>
-          </section>
-
-          {/* 주간회의 */}
-          <section>
-            <h2 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
-              📅 주간회의
-            </h2>
-            <Card className="mb-4 border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
-              <CardContent className="text-sm text-amber-700 dark:text-amber-300">
-                👉 상황에 따라 시간 및 날짜 변동 가능성 있습니다.
-                <br />
-                👉 매주 목요일에 주간보고서를 작성합니다.
-              </CardContent>
-            </Card>
-            <div className="rounded-lg bg-muted px-4 py-3">
-              <p className="font-medium">
-                🗓️ 매주 금요일 개발자 주간회의{" "}
-                <span className="text-foreground/50 font-normal">(11:00)</span>
-              </p>
-              <p className="text-sm text-foreground/60 mt-1">
-                각 개발 파트별 작업 및 이슈 내용 공유
-              </p>
-            </div>
           </section>
 
           {/* 휴가 */}

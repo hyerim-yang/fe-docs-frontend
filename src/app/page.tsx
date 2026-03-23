@@ -8,6 +8,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/comp
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { docs, tagVariant } from "@/lib/docs";
+import { useActiveCategory } from "@/context/category-context";
 
 function formatDate(dateStr: string) {
   const d = new Date(dateStr);
@@ -16,15 +17,17 @@ function formatDate(dateStr: string) {
 
 export default function Home() {
   const [query, setQuery] = useState("");
+  const { activeCategory } = useActiveCategory();
 
   const filtered = docs.filter((doc) => {
-    return (
+    const matchesCategory = activeCategory === "전체" || doc.category === activeCategory;
+    const matchesQuery =
       query === "" ||
       doc.title.includes(query) ||
       doc.description.includes(query) ||
       doc.author.includes(query) ||
-      doc.tag.includes(query)
-    );
+      (Array.isArray(doc.tag) ? doc.tag.some((t) => t.includes(query)) : doc.tag.includes(query));
+    return matchesCategory && matchesQuery;
   });
 
   return (
@@ -73,15 +76,16 @@ export default function Home() {
                 <Link href={doc.href} className="block h-full">
                   <Card className="h-full transition-all hover:shadow-md hover:border-foreground/20">
                     <CardHeader>
-                      <div className="mb-1">
-                        <Badge
-                          variant="outline"
-                          className={
-                            tagVariant[doc.tag] ?? "bg-secondary text-secondary-foreground"
-                          }
-                        >
-                          {doc.tag}
-                        </Badge>
+                      <div className="mb-1 flex flex-wrap gap-1">
+                        {(Array.isArray(doc.tag) ? doc.tag : [doc.tag]).map((t) => (
+                          <Badge
+                            key={t}
+                            variant="outline"
+                            className={tagVariant[t] ?? "bg-secondary text-secondary-foreground"}
+                          >
+                            {t}
+                          </Badge>
+                        ))}
                       </div>
                       <CardTitle className="text-base group-hover/card:text-red-600 dark:group-hover/card:text-red-400 transition-colors">
                         {doc.title}

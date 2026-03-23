@@ -7,6 +7,7 @@ import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/s
 import { AppSidebar, CATEGORY_ICON_MAP, type Category } from "@/components/app-sidebar";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { docs } from "@/lib/docs";
+import { CategoryProvider } from "@/context/category-context";
 
 function buildCategories(): Category[] {
   const groupMap: Record<string, typeof docs> = {};
@@ -50,9 +51,8 @@ export function SidebarLayout({ children }: { children: React.ReactNode }) {
   const displayCategory = isHome ? activeCategory : (currentDoc?.category ?? "전체");
 
   const handleCategoryChange = (value: string) => {
-    if (isHome) {
-      setActiveCategory(value);
-    } else {
+    setActiveCategory(value);
+    if (!isHome) {
       // 문서 페이지에서 카테고리 클릭 시 홈으로 이동
       router.push("/");
     }
@@ -81,7 +81,7 @@ export function SidebarLayout({ children }: { children: React.ReactNode }) {
           </div>
         </header>
 
-        {children}
+        <CategoryProvider value={{ activeCategory: displayCategory }}>{children}</CategoryProvider>
       </SidebarInset>
     </SidebarProvider>
   );
