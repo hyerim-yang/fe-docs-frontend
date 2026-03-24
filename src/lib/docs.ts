@@ -46,6 +46,15 @@ export const docs: Doc[] = [
     href: "/docs/git",
   },
   {
+    title: "Github",
+    description: "Github 저장소 구조와 관리 방법을 안내합니다.",
+    author: "양혜림",
+    date: "2026-03-24",
+    category: "FrontEnd",
+    tag: "기술",
+    href: "/docs/github",
+  },
+  {
     title: "Vercel",
     description: "Vercel 배포 설정, 환경변수 관리, 프리뷰 배포 등 Vercel 사용 가이드입니다.",
     author: "양혜림",
