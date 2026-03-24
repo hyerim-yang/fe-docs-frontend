@@ -47,9 +47,9 @@ export const docs: Doc[] = [
   },
   {
     title: "Vercel",
-    description: "Vercel 관련 문서입니다.",
-    author: "작성자 이름",
-    date: "2026-03-23",
+    description: "Vercel 배포 설정, 환경변수 관리, 프리뷰 배포 등 Vercel 사용 가이드입니다.",
+    author: "양혜림",
+    date: "2026-03-24",
     category: "FrontEnd",
     tag: "기술",
     href: "/docs/vercel",
